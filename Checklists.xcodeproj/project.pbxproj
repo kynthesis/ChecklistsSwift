@@ -14,6 +14,11 @@
 		D25E960F29D69AAD00C2DC9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D25E960E29D69AAD00C2DC9D /* Assets.xcassets */; };
 		D25E961229D69AAD00C2DC9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25E961029D69AAD00C2DC9D /* LaunchScreen.storyboard */; };
 		D25E961A29D6E12700C2DC9D /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25E961929D6E12700C2DC9D /* ChecklistItem.swift */; };
+		D25E961C29D738C500C2DC9D /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25E961B29D738C500C2DC9D /* ItemDetailViewController.swift */; };
+		D25E961E29D9703B00C2DC9D /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25E961D29D9703B00C2DC9D /* AllListsViewController.swift */; };
+		D25E962029D974BD00C2DC9D /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25E961F29D974BD00C2DC9D /* Checklist.swift */; };
+		D25E962229D9793800C2DC9D /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25E962129D9793800C2DC9D /* ListDetailViewController.swift */; };
+		D25E962429D988CC00C2DC9D /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25E962329D988CC00C2DC9D /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		D25E961129D69AAD00C2DC9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D25E961329D69AAD00C2DC9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D25E961929D6E12700C2DC9D /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
+		D25E961B29D738C500C2DC9D /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		D25E961D29D9703B00C2DC9D /* AllListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListsViewController.swift; sourceTree = "<group>"; };
+		D25E961F29D974BD00C2DC9D /* Checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
+		D25E962129D9793800C2DC9D /* ListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
+		D25E962329D988CC00C2DC9D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +71,16 @@
 				D25E960529D69AAB00C2DC9D /* AppDelegate.swift */,
 				D25E960729D69AAB00C2DC9D /* SceneDelegate.swift */,
 				D25E960929D69AAB00C2DC9D /* ChecklistViewController.swift */,
+				D25E961D29D9703B00C2DC9D /* AllListsViewController.swift */,
 				D25E960B29D69AAB00C2DC9D /* Main.storyboard */,
 				D25E960E29D69AAD00C2DC9D /* Assets.xcassets */,
 				D25E961029D69AAD00C2DC9D /* LaunchScreen.storyboard */,
 				D25E961329D69AAD00C2DC9D /* Info.plist */,
 				D25E961929D6E12700C2DC9D /* ChecklistItem.swift */,
+				D25E961B29D738C500C2DC9D /* ItemDetailViewController.swift */,
+				D25E961F29D974BD00C2DC9D /* Checklist.swift */,
+				D25E962129D9793800C2DC9D /* ListDetailViewController.swift */,
+				D25E962329D988CC00C2DC9D /* DataModel.swift */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -141,10 +156,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25E961C29D738C500C2DC9D /* ItemDetailViewController.swift in Sources */,
 				D25E960A29D69AAB00C2DC9D /* ChecklistViewController.swift in Sources */,
+				D25E961E29D9703B00C2DC9D /* AllListsViewController.swift in Sources */,
 				D25E960629D69AAB00C2DC9D /* AppDelegate.swift in Sources */,
 				D25E960829D69AAB00C2DC9D /* SceneDelegate.swift in Sources */,
 				D25E961A29D6E12700C2DC9D /* ChecklistItem.swift in Sources */,
+				D25E962029D974BD00C2DC9D /* Checklist.swift in Sources */,
+				D25E962229D9793800C2DC9D /* ListDetailViewController.swift in Sources */,
+				D25E962429D988CC00C2DC9D /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
