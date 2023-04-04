@@ -68,21 +68,45 @@
 		D25E960429D69AAB00C2DC9D /* Checklists */ = {
 			isa = PBXGroup;
 			children = (
+				D2FE63F929DC58C000BD4876 /* Data Models */,
+				D2FE63FA29DC58E700BD4876 /* View Controllers */,
+				D2FE63FC29DC591A00BD4876 /* Resouces */,
 				D25E960529D69AAB00C2DC9D /* AppDelegate.swift */,
-				D25E960729D69AAB00C2DC9D /* SceneDelegate.swift */,
-				D25E960929D69AAB00C2DC9D /* ChecklistViewController.swift */,
-				D25E961D29D9703B00C2DC9D /* AllListsViewController.swift */,
-				D25E960B29D69AAB00C2DC9D /* Main.storyboard */,
-				D25E960E29D69AAD00C2DC9D /* Assets.xcassets */,
-				D25E961029D69AAD00C2DC9D /* LaunchScreen.storyboard */,
 				D25E961329D69AAD00C2DC9D /* Info.plist */,
-				D25E961929D6E12700C2DC9D /* ChecklistItem.swift */,
-				D25E961B29D738C500C2DC9D /* ItemDetailViewController.swift */,
-				D25E961F29D974BD00C2DC9D /* Checklist.swift */,
-				D25E962129D9793800C2DC9D /* ListDetailViewController.swift */,
-				D25E962329D988CC00C2DC9D /* DataModel.swift */,
+				D25E960729D69AAB00C2DC9D /* SceneDelegate.swift */,
 			);
 			path = Checklists;
+			sourceTree = "<group>";
+		};
+		D2FE63F929DC58C000BD4876 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				D25E961F29D974BD00C2DC9D /* Checklist.swift */,
+				D25E961929D6E12700C2DC9D /* ChecklistItem.swift */,
+				D25E962329D988CC00C2DC9D /* DataModel.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		D2FE63FA29DC58E700BD4876 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D25E961D29D9703B00C2DC9D /* AllListsViewController.swift */,
+				D25E960929D69AAB00C2DC9D /* ChecklistViewController.swift */,
+				D25E961B29D738C500C2DC9D /* ItemDetailViewController.swift */,
+				D25E962129D9793800C2DC9D /* ListDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D2FE63FC29DC591A00BD4876 /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				D25E960E29D69AAD00C2DC9D /* Assets.xcassets */,
+				D25E961029D69AAD00C2DC9D /* LaunchScreen.storyboard */,
+				D25E960B29D69AAB00C2DC9D /* Main.storyboard */,
+			);
+			path = Resouces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

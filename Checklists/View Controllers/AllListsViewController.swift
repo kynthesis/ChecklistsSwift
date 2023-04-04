@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AllListsViewController: UITableViewController, ListDetailViewControllerDelegate {
+class AllListsViewController: UITableViewController, ListDetailViewControllerDelegate, UINavigationControllerDelegate {
     let cellIdentifier: String = "ChecklistCell"
     var dataModel: DataModel!
     
@@ -16,6 +16,18 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
         
         navigationController?.navigationBar.prefersLargeTitles = true
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        navigationController?.delegate = self
+        
+        let index = dataModel.indexOfSelectedChecklist
+        if index >= 0 && index < dataModel.lists.count {
+            let checklist = dataModel.lists[index]
+            performSegue(withIdentifier: "ShowChecklist", sender: checklist)
+        }
     }
     
     // MARK: - Table View Data Sources
@@ -42,6 +54,8 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
     
     // MARK: - Table View Delegates
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        dataModel.indexOfSelectedChecklist = indexPath.row
+        
         let checklist = dataModel.lists[indexPath.row]
         performSegue(withIdentifier: "ShowChecklist", sender: checklist)
     }
@@ -80,6 +94,13 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
             }
         }
         navigationController?.popViewController(animated: true)
+    }
+    
+    // MARK: - Navigation Controller Delegates
+    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        if viewController === self {
+            dataModel.indexOfSelectedChecklist = -1
+        }
     }
     
     // MARK: - Navigations
